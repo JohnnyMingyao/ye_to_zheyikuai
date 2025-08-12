@@ -1,0 +1,31 @@
+{
+    "manifest_version":3,
+    "name":"weizhenzu",
+    "version" : "1.0",
+    "description": "very first code for extention, which benefits Weizhenian",
+    "icons":{
+        "16": "icon.svg"
+    },
+    "action":{
+        "default_icon":{
+            "16":"icon.svg"
+        },
+        "default_title":"This is not ye, this is zheyikuai",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+    "activeTab",
+    "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+        }
+    ]
+
+
+}
